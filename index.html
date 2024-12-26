@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bat ball minor project</title>
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+  <p>Bat Ball Stemp Game</p>
+  <!-- when user select bat -->
+  <button
+onclick = "let randomvalue = Math.random()*3;
+console.log('you have choosen bat');
+let uservalue = 'bat';
+let computervalue;
+let result;
+if(randomvalue>=0 && randomvalue<= 1){
+  computervalue = 'bat'; 
+
+ result = 'tie';
+
+}
+else if(randomvalue>=1 && randomvalue<= 2){
+  computervalue = 'ball';
+ result = 'user win';
+}
+else{
+   computervalue ='stemp';  
+   result = 'computer win';
+}
+
+alert(`user choice is ${uservalue} computer choice is ${computervalue}  ${result}`);
+">Bat</button>
+
+<!-- When user select ball -->
+<button
+onclick = "randomvalue = Math.random()*3;
+uservalue='ball';
+if(randomvalue>=0 && randomvalue<= 1){
+  computervalue = 'bat';
+ result = 'computer win';
+}
+else if(randomvalue>=1 && randomvalue<= 2){
+ computervalue = 'ball';
+ result = 'Tie';
+}
+else{
+   computervalue ='stemp'; 
+   result = 'user win';
+}
+
+alert(`user value is ${uservalue} computer value is  ${computervalue} ${result}` )
+">Ball</button>
+
+<!-- When user select stemp -->
+<button
+onclick = "randomvalue = Math.random()*3;
+uservalue = 'stemp';
+console.log('you have choosen stemp');
+if(randomvalue>=0 && randomvalue<= 1){
+  computervalue = 'bat';
+ result = 'user win';
+
+}
+else if(randomvalue>=1 && randomvalue<= 2){
+  computervalue = 'ball';
+
+ result = 'computer win';
+}
+else{
+   computervalue ='stemp';
+ 
+   result = 'tie';
+
+}
+console.log('computer value is' + '' + computervalue);
+console.log('result is' + '' + result);
+alert(`result is ${uservalue} computer value is ${computervalue} ${result}`);
+">Stemp</button>
+   <script>   
+  
+// console.log(8>5);
+// console.log (typeof 5);
+
+// //if condition-
+// let person = "thrusty";
+// if(person == "thrusty"){
+//   console.log('you should drink water');
+// }
+// if(person!="thrusty"){
+//   console.log('you should prefer another drinks');
+// }
+
+// // if else condition-
+// let age = 25;
+// if (age >=18){
+//   let age = 56;
+// console.log('you can drive bike');
+// }
+// else{
+//   console.log('you should avoid to drive bike');
+// }
+// //  if else ladder
+// let person1 = 'thrusty';
+// if(person1 == 'thrusty')
+// {
+//   console.log('drink water');
+// }
+// else if ('person1!== thrusty'){
+// console.log('eat something');
+// }
+// else{
+//   console.log('jao bhad me kuch nhi lena he to');
+// }
+// // scope concept on using let
+// let agee = 12;
+//  let usermessage ;
+// if(agee > 18){  
+// let usermessage = 'you can drive';
+// console.log(usemessage);
+// }
+// else{
+//   console.log('not allowed');
+// }
+// console.log(usermessage);
+
+//scope on using var
+//  let age2 = 12;
+//   let usermessage2 = '' ;
+// if(age2 > 18){  
+//  let usermessage2 = 'you can drive';
+//  console.log(usermessage2);
+//  }
+//  else{
+//   let usermessage2 = 'you cannot can drive';
+//  console.log(usermessage2);
+//  }
+//  console.log(usermessage2); 
+
+    </script> 
+</body>
+</html>
+
